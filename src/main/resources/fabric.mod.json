@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "magical-frontiers",
+	"version": "${version}",
+	"name": "Magical Frontiers",
+	"description": "This is magical Mod",
+	"authors": [
+		"Giorgio Zambetti"
+	],
+	"contact": {
+		"homepage": "https://giorgiozambetti.com/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/magical-frontiers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.zambettigiorgio.magicalfrontiers.MagicalFrontiers"
+		],
+		"fabric-datagen": [
+			"com.zambettigiorgio.magicalfrontiers.MagicalFrontiersDataGenerator"
+		],
+		"client": [
+			"com.zambettigiorgio.magicalfrontiers.MagicalFrontiersClient"
+		]
+	},
+	"mixins": [
+		"magical-frontiers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
