@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle":"magical-frontiers:block/brown_mycelium_side",
+    "down":"minecraft:block/dirt",
+    "up":"magical-frontiers:block/brown_mycelium_top",
+    "north": "magical-frontiers:block/brown_mycelium_side",
+    "south": "magical-frontiers:block/brown_mycelium_side",
+    "east": "magical-frontiers:block/brown_mycelium_side",
+    "west": "magical-frontiers:block/brown_mycelium_side"
+  }
+}
+

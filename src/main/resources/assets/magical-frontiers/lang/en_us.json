@@ -4,5 +4,6 @@
   "effect.magical-frontiers.increased_mass" : "Increased Mass",
   "item.magical-frontiers.digested_seeds" : "Digested Seeds",
   "block.magical-frontiers.teapot" : "Teapot",
-  "item.magical-frontiers.teapot" : "Teapot"
+  "item.magical-frontiers.teapot" : "Teapot",
+  "block.magical-frontiers.brown_mycelium" : "Brown Mycelium"
 }
