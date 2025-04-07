@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "magical-frontiers:block/wall_mushroom",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "magical-frontiers:block/wall_mushroom"
+    },
+    "facing=south": {
+      "model": "magical-frontiers:block/wall_mushroom",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "magical-frontiers:block/wall_mushroom",
+      "y": 270
+    }
+  }
+}
