@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "magical-frontiers:block/red_mushroom"
+  }
+}

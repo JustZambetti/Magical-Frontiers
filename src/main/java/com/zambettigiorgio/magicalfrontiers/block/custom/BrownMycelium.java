@@ -1,6 +1,7 @@
 package com.zambettigiorgio.magicalfrontiers.block.custom;
 
 import com.mojang.serialization.MapCodec;
+import com.zambettigiorgio.magicalfrontiers.block.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SpreadableBlock;
@@ -27,6 +28,13 @@ public class BrownMycelium extends SpreadableBlock {
                 }
             }
         }
+
+        if (world.getBlockState(pos.up()).isOf(Blocks.RED_MUSHROOM) && world.getBlockState(pos.up().up()).isAir()) {
+            if (random.nextInt(5) == 0) {
+                world.setBlockState(pos.up(), ModBlocks.BIG_RED_MUSHROOM.getDefaultState());
+            }
+        }
+
     }
 
     private boolean canSurvive(BlockState state, WorldView world, BlockPos pos) {

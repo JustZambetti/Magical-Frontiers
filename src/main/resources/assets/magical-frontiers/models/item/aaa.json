@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "magical-frontiers:block/red_mushroom"
+  }
+}
