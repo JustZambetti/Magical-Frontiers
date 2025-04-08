@@ -6,5 +6,9 @@
   "block.magical-frontiers.teapot" : "Teapot",
   "item.magical-frontiers.teapot" : "Teapot",
   "block.magical-frontiers.brown_mycelium" : "Brown Mycelium",
-  "block.magical-frontiers.aaa" : "Big Red Mushroom"
+  "block.magical-frontiers.aaa" : "Big Red Mushroom",
+  "block.magical-frontiers.small_parasol" : "Small Parasol",
+  "block.magical-frontiers.closed_parasol" : "Closed Parasol",
+  "block.magical-frontiers.open_parasol" : "Open Parasol"
+
 }
