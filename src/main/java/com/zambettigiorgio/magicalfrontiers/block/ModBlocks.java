@@ -14,6 +14,8 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import com.zambettigiorgio.magicalfrontiers.block.custom.WallMushroom;
 import com.zambettigiorgio.magicalfrontiers.block.custom.MushroomBlock;
+import com.zambettigiorgio.magicalfrontiers.block.custom.SporesBlock;
+import com.zambettigiorgio.magicalfrontiers.block.custom.BouncyMushroom;
 
 import java.util.function.Function;
 
@@ -23,11 +25,16 @@ public class ModBlocks {
     public static final Block WALL_MUSHROOM = register("wall_mushroom", WallMushroom::new, Block.Settings.copy(Blocks.RED_MUSHROOM).solidBlock((state, world, pos) -> false).strength(0.6f).sounds(BlockSoundGroup.CROP).nonOpaque());
 
     //Mushrooms crops:
-    public static final Block BIG_RED_MUSHROOM = register("aaa", MushroomBlock::new, Block.Settings.copy(Blocks.RED_MUSHROOM).solidBlock((state, world, pos) -> false).strength(0.6f).sounds(BlockSoundGroup.CROP).nonOpaque());
+    public static final Block SPORES = register("spores", SporesBlock::new, Block.Settings.copy(Blocks.RED_MUSHROOM).solidBlock((state, world, pos) -> false).strength(0.6f).sounds(BlockSoundGroup.CROP).nonOpaque());
+    public static final Block BIG_RED_MUSHROOM = register("big_red_mushroom", MushroomBlock::new, Block.Settings.copy(Blocks.RED_MUSHROOM).solidBlock((state, world, pos) -> false).strength(0.6f).sounds(BlockSoundGroup.CROP).nonOpaque());
     public static final Block SMALL_PARASOL = register("small_parasol", MushroomBlock::new, Block.Settings.copy(Blocks.RED_MUSHROOM).solidBlock((state, world, pos) -> false).strength(0.6f).sounds(BlockSoundGroup.CROP).nonOpaque());
     public static final Block CLOSED_PARASOL = register("closed_parasol", MushroomBlock::new, Block.Settings.copy(Blocks.RED_MUSHROOM).solidBlock((state, world, pos) -> false).strength(0.6f).sounds(BlockSoundGroup.CROP).nonOpaque());
     public static final Block OPEN_PARASOL = register("open_parasol", MushroomBlock::new, Block.Settings.copy(Blocks.RED_MUSHROOM).solidBlock((state, world, pos) -> false).strength(0.6f).sounds(BlockSoundGroup.CROP).nonOpaque());
 
+    public static final Block BOUNCY_RED_MUSHROOM = register("bouncy_red_mushroom", BouncyMushroom::new, Block.Settings.copy(Blocks.RED_MUSHROOM_BLOCK).solidBlock((state, world, pos) -> false).strength(0.6f).sounds(BlockSoundGroup.CROP).nonOpaque());
+
+
+    //Potted mushrooms:
     public static final Block POTTED_BIG_RED_MUSHROOM = register("potted_big_red_mushroom",  (settings) -> new FlowerPotBlock(BIG_RED_MUSHROOM, settings), AbstractBlock.Settings.copy(Blocks.POTTED_RED_MUSHROOM));
 
 
@@ -61,6 +68,8 @@ public class ModBlocks {
             fabricItemGroupEntries.add(SMALL_PARASOL.asItem());
             fabricItemGroupEntries.add(CLOSED_PARASOL.asItem());
             fabricItemGroupEntries.add(OPEN_PARASOL.asItem());
+            fabricItemGroupEntries.add(SPORES.asItem());
+            fabricItemGroupEntries.add(BOUNCY_RED_MUSHROOM.asItem());
         });
 
     }
